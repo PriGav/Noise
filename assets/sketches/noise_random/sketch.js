@@ -18,7 +18,7 @@ function draw() {
 	for (let i=0; i<width; i++) {
 		const n = noise(i * 0.01)
 		const x = i
-		const y = height/2 - 100 + (n * 200) - 100
+		const y = height/2 - 150 + (n * 200) - 150
 
 		vertex(x, y)
 
@@ -34,7 +34,7 @@ function draw() {
 		const n = random(1)
 
 		 const x = i
-		 const y = height/2 + 100 + (n * 200) - 100
+		 const y = height/2 + 150 + (n * 200) - 150
 
 		vertex(x, y)
 
