@@ -33,7 +33,10 @@ iframe {
 	display: block;
 	border: none;
 	width: 100%;
-	
+}
+
+.img-2 {
+	display: flex;
 }
 
 header,
