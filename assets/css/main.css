@@ -16,7 +16,7 @@ body {
 
 p {
 	margin: 0 0 1em 0;
-	max-width: 30em;
+	max-width: 35em;
 }
 
 h1 {
@@ -44,8 +44,13 @@ section {
 	padding-top: 0.25em;
 }
 
+header {
+	margin-bottom: 10em;
+}
+
 .filetto {
 	border-top: solid 1px white;
+	padding-top:0.5em;
 }
 
 .titolo-sezione {
