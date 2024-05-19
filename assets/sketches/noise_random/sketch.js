@@ -43,3 +43,7 @@ function draw() {
 	endShape()
 
 }
+
+function refreshPage(){
+    window.location.reload();
+} 

@@ -2,20 +2,25 @@ let slider, slider2, slider3;
 
 function setup() {
 	createCanvas(windowWidth, windowHeight, WEBGL)
+	
 
 	angleMode(DEGREES)
 
 	slider = createSlider(2,7,4,1);
-	slider.position(20,20);
-	slider.size(160);
+	slider.position(15,15);
+	slider.size(130);
 
 	slider2 = createSlider(-20, 180, -20)
-	slider2.position(20,40)
-	slider2.size(160)
+	slider2.position(15,35)
+	slider2.size(130)
 
 	slider3 = createSlider(-20, 180, -20)
-	slider3.position(20,60)
-	slider3.size(160)
+	slider3.position(15,55)
+	slider3.size(130)
+
+	
+
+	
 
 
 
@@ -75,5 +80,7 @@ function draw() {
 		}
 		endShape()
 	}
+
+	
 
 }
