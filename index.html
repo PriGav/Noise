@@ -21,6 +21,7 @@
 		<header>
 			<span></span>
 			<h1>Noise</h1>
+		
 			
 		</header>
 
@@ -45,7 +46,7 @@
 				<p>
 					Esistono diversi tipi di funzione noise: value noise, Perlin noise, simplex noise.
 					Uno dei primi Noise ad essere stato sviluppato è il Perlin noise, sviluppato nel 1982 da Ken Perlin, un professore di informatica della New York University, mentre lavorava sulla generazione di texture per il film Tron. 
-					Nel 1997, Ken Perlin ha ricevuto un Academy Award for Technical Achivement per aver creato l’algoritmo.
+					Nel 1997, Ken Perlin ha ricevuto un <I>Academy Award for Technical Achivement</I> per aver creato l’algoritmo.
 
 				
 				</p>
@@ -73,7 +74,8 @@
 			<h4 class="titolo-sezione">04<br>Algoritmo noise value</h4>
 			<div class="contenuto-sezione">
 				<p> L’algoritmo consiste nella generazione di funzioni noise che vengono sommate in una serie geometrica per creare un fractal noise. <br>
-					Primo step: creare una funzione che ad intervalli regolari e definiti fornisce un valore random normalizzato, cioè compreso tra 0 e 1.
+					Primo step: <a href="http://tobyschachman.com/Shadershop/" target="_blank"> creare una funzione</a> che ad intervalli regolari e definiti fornisce un valore random normalizzato, cioè compreso tra 0 e 1.
+					<br>
 					Secondo step: interpolazione dei punti random con una funzione smooth-step, che possa prendere come input dei parametri non integer. 
 					La funzione smooth-step è una funzione cubica, ha una forma ad S e può assumere valori compresi tra 0 e 1. La funzione smooth-step di ordine n interpola i valori tra 0 e 1 in modo tale che:
 					quando la variabile è all'estremo sinistro dell'intervallo, l'immagine della funzione sia 0;
@@ -84,7 +86,7 @@
 
 				<div class="img-2">
 					<image  style="width:33%; padding-right: 1em;"  src="./assets/img/grafico_noise_punti.jpg"></image>
-					<image  style="width:33%; padding-right:1em"  src="./assets/img/grafico_noise_curva.jpg"></image>
+					<image  style="width:33%; padding-right:1em"  src="./assets/img/grafico_noise_smoothstep.jpg"></image>
 					<image  style="width:33%; padding-right:1em"  src="./assets/img/grafico_noise_curva.jpg"></image>
 				</div>
 
@@ -135,8 +137,14 @@
 			La funzione noise 2D accetta due valori di input e ne restituisce uno di output, compreso tra 0 e 1. Questo è influenzato da tutti i valori che lo circondano nella griglia. 
 
 		</p>
-		<image  style="width:100%"  src="./assets/img/grafico Noise 2d.jpg"></image>
-		<iframe scrolling=no frameborder=0 height=500 src="./assets/sketches/noise_2D_nube/index.html"></iframe>
+		
+		<div class="img-2">
+		<image  style="width:50%; padding-right: 1em"  src="./assets/img/grafico Noise 2d.jpg"></image>
+		<iframe scrolling=no frameborder=0 height=500 width="50%" src="./assets/sketches/noise_2D_nube/index.html"></iframe>
+		</div>
+        <br>
+		<p> scrivere qualcosa per descrivere il grafico </p>
+
 		<iframe scrolling=no frameborder=0 height=500 src="./assets/sketches/noise_2D/index.html"></iframe>
 		
 	</div>
@@ -148,9 +156,9 @@
 			<h4 class="titolo-sezione">Sitografia</h4>
 			<div class="contenuto-sezione">
 				<ul>
-					<li><a href="https://www.youtube.com/watch?v=Qf4dIN99e2w&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD" target="_blank"> Code Train: Noise</a>
-					<li><a href="https://codesthesia.net/p5graphics/lez6-grafica-computazionale/funzione-noise/" target="_blank">Noise p5js</a></li>
-					<li><a href="https://processing.federicopepe.com/math/2016-06-01-random-vs-perlin-noise/" target="_blank">Random e perlin Noise</a></li>
+					<li><a href="https://www.youtube.com/watch?v=Qf4dIN99e2w&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD" target="_blank"> The Coding Train: Noise</a>
+					<li><a href="https://codesthesia.net/p5graphics/lez6-grafica-computazionale/funzione-noise/" target="_blank">La funzione Noise()</a></li>
+					<li><a href="https://processing.federicopepe.com/math/2016-06-01-random-vs-perlin-noise/" target="_blank">Random e Perlin Noise</a></li>
 					<li><a href="https://processing.federicopepe.com/math/2016-07-12-2d-perlin-noise/" target="_blank"> Perlin Noise 2D</a></li>
 					<li><a href="http://www.matteo-basei.it/noise#:~:text=Il%20 simplex%20 noise%2C%20come%20 suggerisce,%2C%20 triangolo%2C%20 tetraedro%2C%20 eccetera." target="_blank"> Matteo Basei: Noise</a></li>
 					<li><a href="https://www.arendpeter.com/Perlin_Noise.html" target="_blank"> Perlin Noise</a></li>
