@@ -6,7 +6,7 @@ function setup (){
   
   slider = createSlider(1,9,4,1);
   slider.position(15,15);
-  slider.size(160);
+  slider.size(130);
  
 
 }

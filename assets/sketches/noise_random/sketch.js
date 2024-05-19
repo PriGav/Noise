@@ -8,12 +8,12 @@ function windowResized(){
 }
 
 function draw() {
-	background(255)
+	background(30)
 
 
 	// noise 1D
 	noFill()
-	stroke(0)
+	stroke(255)
 	beginShape()
 	for (let i=0; i<width; i++) {
 		const n = noise(i * 0.01)
@@ -27,7 +27,7 @@ function draw() {
 	endShape()
 
 	// random
-	stroke(0)
+	stroke(255)
 	randomSeed(0)
 	beginShape()
 	for (let i=0; i<width; i++) {
