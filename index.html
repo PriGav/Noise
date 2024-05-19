@@ -74,31 +74,32 @@
 			<div class="contenuto-sezione">
 				<p> L’algoritmo consiste nella generazione di funzioni noise che vengono sommate in una serie geometrica per creare un fractal noise. <br>
 					Primo step: creare una funzione che ad intervalli regolari e definiti fornisce un valore random normalizzato, cioè compreso tra 0 e 1.
-					</p>
-
-					<p>	Secondo step: interpolazione dei punti random con una funzione smooth-step, che possa prendere come input dei parametri non integer. 
+					Secondo step: interpolazione dei punti random con una funzione smooth-step, che possa prendere come input dei parametri non integer. 
 					La funzione smooth-step è una funzione cubica, ha una forma ad S e può assumere valori compresi tra 0 e 1. La funzione smooth-step di ordine n interpola i valori tra 0 e 1 in modo tale che:
 					quando la variabile è all'estremo sinistro dell'intervallo, l'immagine della funzione sia 0;
-					quando la variabile è all'estremo destro dell'intervallo, l'immagine della funzione sia 1;
-					<br><br>
-					<image  style="width:100%"  src="./assets/img/2560px-Smoothstep_and_Smootherstep.svg.png"></image>
-
-					
+					quando la variabile è all'estremo destro dell'intervallo, l'immagine della funzione sia 1.
 					Dall’interpolazione dei valori random si ottengono delle funzioni noise, dette anche layers.
-					<br><br>
-					<image  style="width:100%"  src="./assets/img/grafico_noise_curva.jpg"></image>
+				</p>
 
+
+				<div class="img-2">
+					<image  style="width:33%; padding-right: 1em;"  src="./assets/img/grafico_noise_punti.jpg"></image>
+					<image  style="width:33%; padding-right:1em"  src="./assets/img/grafico_noise_curva.jpg"></image>
+					<image  style="width:33%; padding-right:1em"  src="./assets/img/grafico_noise_curva.jpg"></image>
+				</div>
+
+				<br>
+				<p>
 					Per ottenere una funzione rumore di qualità migliore, vengono sommati layers con diversa frequenza e diversa ampiezza, in una serie geometrica. La relazione esistente tra i layers che vengono sommati: ogni layer ha la frequenza che è il doppio di quella del layer precedente e l’ampiezza che è la metà, per questo vengono chiamati anche ottave.
-					Si possono modulare le caratteristiche delle funzioni noise variando frequenza e ampiezza. 
-					Aumentando il numero di ottave, aumenta il numero di dettagli.
+					Si possono modulare le caratteristiche delle funzioni noise variando frequenza e ampiezza. La prima ottava (con frequenza e ampiezza pari a 1) definisce la forma complessiva della funzione finale, mentre le restanti aggiungono dettaglio, creando una struttura frattale.
+					Il noise, quindi, è una funzione in cui possono essere passati uno, due o più valori e restituisce un numero.
+					Aumentando il numero di ottave, aumenta il numero di dettagli. 
+				</p>	
 					<iframe scrolling=no frameborder=0 height=500 width="100%" src="./assets/sketches/ottave/index.html"></iframe>
 
-				</p>
 				
-			<div class="img-2">
-				<image  style="width:50%; padding-right: 1em;"  src="./assets/img/grafico_noise_punti.jpg"></image>
-				<image  style="width:50%"  src="./assets/img/grafico_noise_punti.jpg"></image>
-			</div>
+				
+			
 
 			</div>
 		</section>
@@ -111,13 +112,15 @@
 				<p>
 					La funzione noise uno-dimensionale riceve un solo input e fornisce un valore di output compreso tra 0 e 1. Può essere considerato come una sequenza lineare di valori lungo l’asse delle x, che visualizziamo come il profilo di una montagna. Ogni valore di output corrisponde al noise ad una determinata posizione e tale valore resta invariato finché il seme è lo stesso. 
 					Il valore di noise per una data posizione xoff è influenzato dai valori che lo precedono e lo seguono. 
-					La prima ottava (con frequenza e ampiezza pari a 1) definisce la forma complessiva della funzione finale, mentre le restanti aggiungono dettaglio, creando una struttura frattale.
-					Il noise, quindi, è una funzione in cui possono essere passati uno, due o più valori e restituisce un numero.
+					
 					
 
 				</p>
-				<image  style="width:100%" src="./assets/img/grafico Noise 1D.jpg"></image>
-				<iframe scrolling=no frameborder=0 height=500 width="100%" src="./assets/sketches/codice_1D_(grigio_strisce orizz)/index.html"></iframe>
+
+				<div class="img-2">
+				<image  style="width:50%; padding-right: 1em;" src="./assets/img/grafico Noise 1D.jpg"></image>
+				<iframe scrolling=no frameborder=0 height=500 width="50%" src="./assets/sketches/codice_1D_(grigio_strisce orizz)/index.html"></iframe>
+			    </div>
 
 			</div>
 		</section>

@@ -16,7 +16,7 @@ function windowResized(){
 
 
 function draw (){
-   background (20);
+   background (30);
    stroke(255);
    noFill();
   beginShape();
