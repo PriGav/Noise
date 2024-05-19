@@ -37,7 +37,7 @@ function draw() {
 	rotateX(ax)
 	rotateY(ay)
 
-	background(20)
+	background(30)
 	noFill()
 	stroke(255)
 

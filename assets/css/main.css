@@ -21,7 +21,7 @@ p {
 
 h1 {
 	margin: 0;
-	font-size: 3em;
+	font-size: 5em;
 }
 
 h4 {
@@ -67,6 +67,15 @@ header {
 ul {
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color:white;
+}
+
+a:hover {
+	color: grey;
 }
 
 /* -- breakpoint: schermi piccoli, larghezza massima 500 pixel -- */
