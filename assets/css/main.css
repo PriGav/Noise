@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: black; /* white, #FFFFFF */
 	padding: 2em;
@@ -47,9 +51,7 @@ section {
 	padding-top: 0.25em;
 }
 
-header {
-	margin-bottom: 8em;
-}
+
 
 .filetto {
 	border-top: solid 1px white;
@@ -79,19 +81,32 @@ a:hover {
 	color: grey;
 }
 
-.top{
-	position: fixed;
-	bottom: 1em;
-	right: 2em;
-	z-index: 100;
-	display: block;
+.top {
+	--offset: 50px; 
+  
+	position: sticky;
+	bottom: 1em;      
 	text-align: right;
-	font: size 25px;
+	place-self: end;
+	margin-top: calc(100vh + var(--offset));
+  
+	/* visual styling */
 	text-decoration: none;
-	
-}
+	white-space: nowrap;
+  }
 
 .sitografia a{
+	text-decoration: none;
+}
+
+.index {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 5em;	
+}
+
+.index a {
 	text-decoration: none;
 }
 

@@ -7,6 +7,10 @@ function setup (){
   slider = createSlider(1,9,4,1);
   slider.position(15,15);
   slider.size(130);
+
+  textSize(20); 
+  
+  
  
 
 }
@@ -20,6 +24,9 @@ function draw (){
    stroke(255);
    noFill();
   beginShape();
+
+  
+  
   
   var n = slider.value()
   noiseDetail(n)
@@ -34,4 +41,9 @@ function draw (){
    endShape();
    
    //noLoop();
+
+   noStroke();
+   fill (255);
+   text('Octaves', 160, 30);
+   
  }

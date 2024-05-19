@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>La funzione Noise</title>
+	<title>Noise</title>
 	<meta name="author"      content="Gavin Prisca e Magnoni Maria">
 	<meta name="description" content="Descrizione">
 	<meta name="viewport"    content="width=device-width, initial-scale=1">
@@ -21,15 +21,23 @@
 		<header>
 			<span></span>
 			<h1>Noise</h1>
-		
-			
+			<br>
+			<div class="index">
+			<li> <a href="#01"> 01. Introduzione</a></li>
+			<li> <a href="#02">02. Storia</a></li>
+			<li><a href="#03">03. Random vs Noise</a></li>
+			<li><a href="#04">04. Algoritmo</a> </li>
+			<li><a href="#05">05. Noise 1D</a></li>
+			<li><a href="#06">06. Noise 2D</a></li>
+			<li><a href="#07">07. Sitografia</a></li>
+			<li><a href="#About">About</a></li>
 		</header>
 
 		<!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">01 <br>Introduzione</h4>
-			<div class="contenuto-sezione">
+		<section class="filetto" id="01">
+			<h4 class="titolo-sezione">01. Introduzione </h4>
+			<div class="contenuto-sezione"> 
 				<p>
 					Il noise è un algoritmo che genera dei numeri float pseudo-random. I valori di output sono correlati e vicini tra loro, in modo da creare una sequenza “smooth” tra i numeri random. La funzione noise permette di ottenere una casualità organica e naturale, perciò viene utilizzata nella generazione procedurale di fenomeni naturali, come paesaggi, nuvole, texture.
 
@@ -40,12 +48,12 @@
 
 		<!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">02<br> Storia</h4>
+		<section class="filetto" id="02">
+			<h4 class="titolo-sezione">02. Storia</h4>
 			<div class="contenuto-sezione">
 				<p>
-					Esistono diversi tipi di funzione noise: value noise, Perlin noise, simplex noise.
-					Uno dei primi Noise ad essere stato sviluppato è il Perlin noise, sviluppato nel 1982 da Ken Perlin, un professore di informatica della New York University, mentre lavorava sulla generazione di texture per il film Tron. 
+					Esistono diversi tipi di funzione noise: Value Noise, Perlin Noise, Simplex noise.
+					Uno dei primi Noise ad essere stato sviluppato è stato il Perlin noise, sviluppato nel 1982 da Ken Perlin, un professore di informatica della New York University, mentre lavorava sulla generazione di texture per il film Tron. 
 					Nel 1997, Ken Perlin ha ricevuto un <I>Academy Award for Technical Achivement</I> per aver creato l’algoritmo.
 
 				
@@ -55,8 +63,8 @@
 
 		<!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">03<br>Diffrenza tra Random e Noise</h4>
+		<section class="filetto" id="03">
+			<h4 class="titolo-sezione">03. Diffrenza tra Random e Noise</h4>
 			<div class="contenuto-sezione">
 				<p>
 					La funzione random riceve come input due valori, un massimo e un minimo, restituisce un numero casuale di tipo float. I valori generati ogni volta che viene chiamata la funzione sono indipendenti tra di loro. <br>
@@ -70,8 +78,8 @@
 
 		<!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">04<br>Algoritmo noise value</h4>
+		<section class="filetto" id="04">
+			<h4 class="titolo-sezione">04. Algoritmo noise value</h4>
 			<div class="contenuto-sezione">
 				<p> L’algoritmo consiste nella generazione di funzioni noise che vengono sommate in una serie geometrica per creare un fractal noise. <br>
 					Primo step: <a href="http://tobyschachman.com/Shadershop/" target="_blank"> creare una funzione</a> che ad intervalli regolari e definiti fornisce un valore random normalizzato, cioè compreso tra 0 e 1.
@@ -108,8 +116,8 @@
 
 <!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">05<br>Noise 1D</h4>
+		<section class="filetto" id="05">
+			<h4 class="titolo-sezione">05. Noise 1D</h4>
 			<div class="contenuto-sezione">
 				<p>
 					La funzione noise uno-dimensionale riceve un solo input e fornisce un valore di output compreso tra 0 e 1. Può essere considerato come una sequenza lineare di valori lungo l’asse delle x, che visualizziamo come il profilo di una montagna. Ogni valore di output corrisponde al noise ad una determinata posizione e tale valore resta invariato finché il seme è lo stesso. 
@@ -129,8 +137,8 @@
 
 <!-- --------------------------------------------------------------------- -->
 
-<section class="filetto">
-	<h4 class="titolo-sezione">06<br> Noise 2D</h4>
+<section class="filetto" id="06">
+	<h4 class="titolo-sezione">06. Noise 2D</h4>
 	<div class="contenuto-sezione">
 		<p>
 			Nell’algoritmo Noise 2D I valori di input vengono rappresentati in una griglia bidimensionale, il Value Noise genera valori casuali ai nodi della griglia e li interpola per creare transizioni graduali tra questi valori.
@@ -152,8 +160,8 @@
 
 <!-- --------------------------------------------------------------------- -->
 
-		<section class="filetto">
-			<h4 class="titolo-sezione">Sitografia</h4>
+		<section class="filetto" id="07">
+			<h4 class="titolo-sezione">07. Sitografia</h4>
 			<div class="contenuto-sezione">
 				<ul class="sitografia">
 					<li><a href="https://www.youtube.com/watch?v=Qf4dIN99e2w&list=PLRqwX-V7Uu6bgPNQAdxQZpJuJCjeOr7VD" target="_blank"> The Coding Train: Noise</a>
@@ -184,12 +192,25 @@
 			</div>
 		</section>
 
-<!-- --------------------------------------------------------------------- -->		
-<footer>
-	<div>
-		<a class="top" href="#">↑</a>
+
+		<!-- --------------------------------------------------------------------- -->
+
+<section class="filetto" id="About">
+	<h4 class="titolo-sezione">About</h4>
+	<div class="contenuto-sezione">
+		<p>
+			Progetto realizzato da Prisca Gavin e Maria Magnoni per il corso di Matematica per il Design presso l'ISIA di Urbino nell'anno accademico 2023/2024. Supervisionato da Andreas Gysin.
+		</p>
+			
+		
+		
+		
 	</div>
-</footer>
+</section>
+
+<!-- --------------------------------------------------------------------- -->		
+
+	<a class="top" href="#">↑</a>
 	</main>
 </body>
 </html>
